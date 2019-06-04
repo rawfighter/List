@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="$viewport" content="width=device-width" />
+  <title>List</title>
+  <!-- Offline -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <script type="text/javascript"></script>
+  <!-- 	<script type="text/javascript">
+    window.onbeforeunload = function() {
+        return "Dude, are you sure you want to leave? Think of the kittens!";
+    }
+</script> -->
+
+<!-- Online -->
+<!-- <li  class="mylist"nk rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+<!-- <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script> -->
+</head>
+<body id="body">
+<canvas id=c></canvas>
+<div class="container-fluid bod">
+	
+	<div class="row">
+		<div class="col-xs-9 ">
+			<div class="row hiden">
+				<div class="col-xs-4">
+					<h2 id="eat" onclick="hm()" class="text-center hiden shine">Eat</h2>
+
+					<ul id="left" class="hiden">
+							<li  class="mylist">
+									<article>
+										<label class="label input--checkbox"><input class="inputed input--checkbox" name="1.20" type="checkbox" value="Adobo"><span class="input__box"></span></label> 
+									</article>Adobo
+								</li>
+						<li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="5.00" type="checkbox" value="Aceite"><span class="input__box"></span></label> 
+							</article>Aceite
+						</li>
+						<li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="3.00" type="checkbox" value="Agua"><span class="input__box"></span></label> 
+							</article>Agua
+						</li>
+						<li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.00" type="checkbox" value="Aguacate"><span class="input__box"></span></label> 
+							</article>Aguacate
+						</li>
+						<li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="1.40" type="checkbox" value="Arroz"><span class="input__box"></span></label> 
+							</article>Arroz
+						</li>
+						<li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="1.30" type="checkbox" value="Atun"><span class="input__box"></span></label> 
+							</article>Atun
+						</li>
+						<li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="5.00" type="checkbox" value="Bacon"><span class="input__box"></span></label> 
+							</article>Bacon
+						</li>
+						<li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.00" type="checkbox" value="Batata"><span class="input__box"></span></label> 
+							</article>Batata
+						</li>
+						<li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="4.00" type="checkbox" value="Bistec"><span class="input__box"></span></label> 
+							</article>Bistec
+						</li>
+						 <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="6.20" type="checkbox" value="Cafe"><span class="input__box"></span></label> 
+							</article>Cafe
+						</li>
+						<li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.00" type="checkbox" value="Calabaza"><span class="input__box"></span></label> 
+							</article>Calabaza
+						</li>
+						<li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="10.00" type="checkbox" value="Camarones"><span class="input__box"></span></label> 
+							</article>Camarones
+						</li> 
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.50" type="checkbox" value="Capri Sun"><span class="input__box"></span></label> 
+							</article>Capri Sun
+						</li>
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="1.20" type="checkbox" value="Cebolla"><span class="input__box"></span></label> 
+							</article>Cebolla
+						</li>
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="1.10" type="checkbox" value="Chef B"><span class="input__box"></span></label> 
+							</article>Chef B
+						</li>
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.40" type="checkbox" value="Chipotle"><span class="input__box"></span></label> 
+							</article>Chipotle
+						</li>
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="5.00" type="checkbox" value="Chuletas"><span class="input__box"></span></label> 
+							</article>Chuletas
+						</li>
+			             <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="9.00" type="checkbox" value="Churrasco"><span class="input__box"></span></label> 
+							</article>Churrasco
+						</li>
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="1.20" type="checkbox" value="Crema Maiz"><span class="input__box"></span></label> 
+							</article>Crema Maiz
+						</li>
+						 <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="1.10" type="checkbox" value="Cubitos"><span class="input__box"></span></label> 
+							</article>Cubitos
+						</li>
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="3.00" type="checkbox" value="Fritas"><span class="input__box"></span></label> 
+							</article>Fritas
+						</li>
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="0.60" type="checkbox" value="Habichuelas"><span class="input__box"></span></label> 
+							</article>Habichuelas
+						</li>
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="3.00" type="checkbox" value="Hamburguer"><span class="input__box"></span></label> 
+							</article>Hamburguer
+						</li>
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="5.00" type="checkbox" value="Hot Dog"><span class="input__box"></span></label> 
+							</article>Hot Dog
+						</li>
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.20" type="checkbox" value="Huevos"><span class="input__box"></span></label> 
+							</article>Huevos
+						</li>
+
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="5.00" type="checkbox" value="Jamon"><span class="input__box"></span></label> 
+							</article>Jamon
+						</li>
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="3.00" type="checkbox" value="Leche"><span class="input__box"></span></label> 
+							</article>Leche
+						</li>
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="1.80" type="checkbox" value="Lechuga"><span class="input__box"></span></label> 
+							</article>Lechuga
+						</li>
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.00" type="checkbox" value="Limon"><span class="input__box"></span></label> 
+							</article>Limon
+						</li>
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="1.50" type="checkbox" value="Lipton"><span class="input__box"></span></label> 
+							</article>Lipton
+						</li>
+						 <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.50" type="checkbox" value="Maltas"><span class="input__box"></span></label> 
+							</article>Maltas
+						</li>
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="9.00" type="checkbox" value="Masitas"><span class="input__box"></span></label> 
+							</article>Masitas
+						</li>
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="3.00" type="checkbox" value="Mayo"><span class="input__box"></span></label> 
+							</article>Mayo
+						</li>
+			             <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="3.40" type="checkbox" value="Meriendas"><span class="input__box"></span></label> 
+							</article>Meriendas
+						</li>
+
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="0.70" type="checkbox" value="Maiz"><span class="input__box"></span></label> 
+							</article>Maiz
+						</li>
+						<li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.20" type="checkbox" value="Mantequilla"><span class="input__box"></span></label> 
+							</article>Mantequilla
+						</li>
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="3.00" type="checkbox" value="Mazorca"><span class="input__box"></span></label> 
+							</article>Mazorca
+						</li>
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="5.00" type="checkbox" value="Molida"><span class="input__box"></span></label> 
+							</article>Molida
+						</li>
+			             <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="16.00" type="checkbox" value="New York Strip"><span class="input__box"></span></label> 
+							</article>New York Strip
+						</li>
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="1.00" type="checkbox" value="Noodles"><span class="input__box"></span></label> 
+							</article>Noodles
+						</li>
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="5.00" type="checkbox" value="Nutella"><span class="input__box"></span></label> 
+							</article>Nutella
+						</li>
+						  <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="5.00" type="checkbox" value="Paella"><span class="input__box"></span></label> 
+							</article>Paella
+						</li>  
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="1.50" type="checkbox" value="Pan"><span class="input__box"></span></label> 
+							</article>Pan
+						</li>
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.50" type="checkbox" value="Pancake"><span class="input__box"></span></label> 
+							</article>Pancake
+						</li>
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="3.00" type="checkbox" value="Papas"><span class="input__box"></span></label> 
+							</article>Papas
+						</li>
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="7.00" type="checkbox" value="Pechugas"><span class="input__box"></span></label> 
+							</article>Pechugas
+						</li>
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.00" type="checkbox" value="Pique"><span class="input__box"></span></label> 
+							</article>Pique
+						</li>
+			             <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.00" type="checkbox" value="Pimientos"><span class="input__box"></span></label> 
+							</article>Pimientos
+						</li>
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="5.00" type="checkbox" value="Pizza/rolls"><span class="input__box"></span></label> 
+							</article>Pizza/rolls
+						</li>
+						<li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="3.50" type="checkbox" value="Plantillas"><span class="input__box"></span></label> 
+							</article>Plantillas
+						</li>
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.00" type="checkbox" value="Powerade"><span class="input__box"></span></label> 
+							</article>Powerade
+						</li> 
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.00" type="checkbox" value="Pozoles"><span class="input__box"></span></label> 
+							</article>Pozoles
+						</li> 
+			             <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="4.00" type="checkbox" value="Pretzels"><span class="input__box"></span></label> 
+							</article>Pretzels
+						</li> 						
+						<li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.50" type="checkbox" value="Queso"><span class="input__box"></span></label> 
+							</article>Queso
+						</li>
+						<li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.00" type="checkbox" value="Recao"><span class="input__box"></span></label> 
+							</article>Recao
+						</li>
+						 <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="16.00" type="checkbox" value="Ribeye"><span class="input__box"></span></label> 
+							</article>Ribeye
+						</li>
+						 <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.00" type="checkbox" value="Sal"><span class="input__box"></span></label> 
+							</article>Sal
+						</li>
+						<li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox"left" name=".60" type="checkbox" value="Salchichas"><span class="input__box"></span></label> 
+							</article>Salchichas
+						</li>
+						<li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="0.30" type="checkbox" value="Salsa"><span class="input__box"></span></label> 
+							</article>Salsa
+						</li>
+						<li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.00" type="checkbox" value="Sazon"><span class="input__box"></span></label> 
+							</article>Sazon
+						</li>
+						<li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.00" type="checkbox" value="Sofrito"><span class="input__box"></span></label> 
+							</article>Sofrito
+						</li> 
+						<li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="0.50" type="checkbox" value="Sopas"><span class="input__box"></span></label> 
+							</article>Sopas
+						</li>
+						<li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.50" type="checkbox" value="Syrup"><span class="input__box"></span></label> 
+							</article>Syrup
+						</li>			     
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.00" type="checkbox" value="Tomate"><span class="input__box"></span></label> 
+							</article>Tomate
+						</li>
+						<li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox"left" name="2.50" type="checkbox" value="Tostitos"><span class="input__box"></span></label> 
+							</article>Tostitos
+						</li>    
+						<li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox"left" name="2.00" type="checkbox" value="Tostones"><span class="input__box"></span></label> 
+							</article>Tostones
+						</li>     
+						<li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox"left" name="1.40" type="checkbox" value="Vinagre"><span class="input__box"></span></label> 
+							</article>Vinagre
+						</li>    			             
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.50" type="checkbox" value="Yautia"><span class="input__box"></span></label> 
+							</article>Yautia
+						</li>		            
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.50" type="checkbox" value="Yuca"><span class="input__box"></span></label> 
+							</article>Yuca
+						</li>
+			            <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="3.00" type="checkbox" value="Zanahoria"><span class="input__box"></span></label> 
+							</article>Zanahoria
+						</li>
+					</ul>
+				</div>
+				<div class="col-xs-4 em">
+				<h2 class="text-center hiden shine">Misc</h2>
+						<ul id="right" class="hiden">
+				  		   <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="10.00" type="checkbox" value="Blu"><span class="input__box"></span></label> 
+							</article>Blu
+						</li>
+						    <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="3.00" type="checkbox" value="Bowl"><span class="input__box"></span></label> 
+							</article>Bowl
+						</li>
+			               <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.00" type="checkbox" value="Bounty"><span class="input__box"></span></label> 
+							</article>Bounty
+						</li>
+			               <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.50" type="checkbox" value="Charmin"><span class="input__box"></span></label> 
+							</article>Charmin
+						</li>
+			               <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.00" type="checkbox" value="Case"><span class="input__box"></span></label> 
+							</article>Case
+						</li>
+			               <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="4.00" type="checkbox" value="Cepillo"><span class="input__box"></span></label> 
+							</article>Cepillo
+						</li>
+			               <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="4.00" type="checkbox" value="Chups"><span class="input__box"></span></label> 
+							</article>Chups
+						</li>
+			               <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.00" type="checkbox" value="Conditioner"><span class="input__box"></span></label> 
+							</article>Conditioner
+						</li>
+			               <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="4.00" type="checkbox" value="Deodorant"><span class="input__box"></span></label> 
+							</article>Deodorant
+						</li>			              
+			               <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="4.00" type="checkbox" value="Flea"><span class="input__box"></span></label> 
+							</article>Flea
+						</li>
+			               <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="3.00" type="checkbox" value="Jabon"><span class="input__box"></span></label> 
+							</article>Jabon
+						</li>
+			               <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="6.00" type="checkbox" value="Inyeccion"><span class="input__box"></span></label> 
+							</article>Inyeccion
+						</li>
+			               <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="5.00" type="checkbox" value="Listerin"><span class="input__box"></span></label> 
+							</article>Listerin
+						</li>
+			               <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="5.00" type="checkbox" value="Pasta"><span class="input__box"></span></label> 
+							</article>Pasta
+						</li>
+			               <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="1.00" type="checkbox" value="Plasticina"><span class="input__box"></span></label> 
+							</article>Plasticina
+						</li>
+			               <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.00" type="checkbox" value="Shampoo"><span class="input__box"></span></label> 
+							</article>Shampoo
+						</li>   
+			               <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="6.00" type="checkbox" value="Tampax"><span class="input__box"></span></label> 
+							</article>Tampax
+						</li>
+			               <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="5.00" type="checkbox" value="Tinte"><span class="input__box"></span></label> 
+							</article>Tinte
+						</li>
+			               <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="4.00" type="checkbox" value="Triple antibiotico"><span class="input__box"></span></label> 
+							</article>Triple antibiotico
+						</li>
+			               <li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="4.00" type="checkbox" value="Velas"><span class="input__box"></span></label> 
+							</article>Velas
+						</li>
+						</ul>					
+				</div>
+			<div class="col-xs-4 em">
+				<h2 class="text-center hiden shine" onclick="clean()">Clean</h2>
+					<ul id="center" class="hiden">
+						<li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="5.00" type="checkbox" value="Air Wick"><span class="input__box"></span></label> 
+							</article>Air Wick
+						</li>
+						<li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.00" type="checkbox" value="Cloro"><span class="input__box"></span></label> 
+							</article>Cloro
+						</li>			 
+						<li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="4.00" type="checkbox" value="Easy-off"><span class="input__box"></span></label> 
+							</article>Easy-off
+						</li>
+						<li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="4.00" type="checkbox" value="Escoba"><span class="input__box"></span></label> 
+							</article>Escoba
+						</li>			 
+						<li  class="mylist">
+							<article>
+								<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.00" type="checkbox" value="Fabuloso"><span class="input__box"></span></label> 
+							</article>Fabuloso
+						</li>
+						<li  class="mylist">
+							<article>
+        						<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.00" type="checkbox" value="Fantastik"><span class="input__box"></span></label> 
+							</article>Fantastik
+						</li>
+						<li  class="mylist">
+							<article>
+        						<label class="label input--checkbox"><input class="inputed input--checkbox" name="5.00" type="checkbox" value="Detergente"><span class="input__box"></span></label> 
+							</article>Lavar
+						</li>
+						<li  class="mylist">
+							<article>
+        						<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.50" type="checkbox" value="Lestoil"><span class="input__box"></span></label> 
+							</article>Lestoil
+						</li>
+						<li  class="mylist">
+							<article>
+        						<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.00" type="checkbox" value="Liquido"><span class="input__box"></span></label> 
+							</article>Liquido
+						</li>
+						 <li  class="mylist">
+							<article>
+        						<label class="label input--checkbox"><input class="inputed input--checkbox" name="5.00" type="checkbox" value="Lysol"><span class="input__box"></span></label> 
+							</article>Lysol
+						</li>
+						<li  class="mylist">
+							<article>
+        						<label class="label input--checkbox"><input class="inputed input--checkbox" name="3.00" type="checkbox" value="Magic Eraser"><span class="input__box"></span></label> 
+							</article>Magic Eraser
+						</li>
+						<li  id="last" class="mylist">
+							<article>
+        						<label class="label input--checkbox"><input class="inputed input--checkbox" name="2.00" type="checkbox" value="Mapo"><span class="input__box"></span></label> 
+							</article>Mapo
+						</li>
+						<li  id="last" class="mylist">
+							<article>
+        						<label class="label input--checkbox"><input class="inputed input--checkbox" name="5.00" type="checkbox" value="Sanitizer"><span class="input__box"></span></label> 
+							</article>Sanitizer
+						</li> 
+
+
+
+						
+							
+					  						
+ 						   
+					</ul>
+					<textarea  class="notes" placeholder="Notes"></textarea>
+				</div>
+			</div>
+			</div>
+
+    
+						<div id="animation" class="col-xs-3 ">
+             <div id="ocart">
+							<h2 class="load text-center shine2">Cart</h2>
+							<div id="mySwitch">
+ 							 <a>
+ 								<label class="switch">
+  									<input  id="mybt" class="button pull-right btn" name="$" type="checkbox" checked   data-clipboard-target="#cart">
+  									<span class="slider round"></span>
+								</label> 
+
+ 							</a>
+ 							</div>    
+ 							   <button contenteditable="false" onclick="less()" class="less btn btn-xs btn-primary">-</button>
+							<button contenteditable="false" onclick="plus()" class="plus btn btn-xs btn-primary">+</button>  
+							 <p id="mytotal" contenteditable="false"></p>
+
+						 <ol id="cart" class="shop" contenteditable="false" onkeyup="keyfunc(event)" onkeydown="keyfunc(event)">
+							
+							
+						</ol>
+              
+          </div>
+						</div>
+						<!-- <div class="popup" onclick="myFunction()">Click me to toggle the popup!
+  <span class="popuptext" id="myPopup"><a height="160" width="100%" scrolling="" href="https://www.google.com/search?q=google">google</a></span>
+</div> -->
+</div> 
+			
+	</div>
+</div>
+</body>
+<!-- <script name="" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js"></script> -->
+ <script src="js/jquery-3.3.1.min.js"></script>
+<script src="script.js"></script>
+</html>

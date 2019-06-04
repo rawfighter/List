@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="pepe2.css"></link>
+    <title>Pepe2</title>
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <ol contenteditable="true">
+        <li onclick="cursor(el)">
+            <input class="test" type="checkbox"> </input>
+            <input type="text"></input>
+        </li>
+        <!--  -->
+        <br>
+        <li onclick="cursor(el)">
+            <input class="testt" type="checkbox"> </input>
+            <!--     <input class="testt" type="text"></input>        -->
+        </li>
+    </ol>
+    <button onclick=save()>Save</button>
+    <button onclick=load()>Load</button>
+    <br>
+    <br>
+    <div class="ejemplo">
+<ul id="list">
+                       
+                    </ul>
+
+
+
+
+        <label for="nombre"> Nombre: </label>
+        <input type="text" class="saved" id="nombre" />
+        <label for="nombre"> Password: </label>
+        <input type="text" class="saved" id="password" />
+        <input type="button" id="save" onclick="guardarDatos()" value="Guardar datos" />
+        <p id="datos"> Pulsa para ver tu nombre y tu password. </p>
+        <input type="button" id="load" onclick="recuperarDatos()" value="Recuperar datos" />
+    </div>
+    <p id="demo">jjhgvckuhvhkvhvkv</p>
+</body>
+<script type="text/javascript" src="pepe2.js"></script>
+
+</html>

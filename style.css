@@ -1,0 +1,593 @@
+ #body{
+  background-color: black;
+  color:white ;
+  
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-filter: blur( 10px ) contrast( 10 );
+  -moz-filter: blur( 10px ) contrast( 10 );
+  filter: blur( 10px ) contrast( 10 );
+  z-index: -1;
+}
+
+.line{
+  text-decoration: line-through;
+}
+
+p{
+  line-height: 2.5;
+  /* margin-top: 15%; */
+  color:black;
+  font-weight: bold;
+  display:inline;
+  padding-left: 60px;
+  padding-top: 0px;
+  position: absolute;
+  font-size: 13px;
+
+}
+button{
+  color: black !important;
+  width: 20px;
+  visibility: hidden;
+
+}
+
+button:focus{
+  outline: 0 !important;
+  border: none;
+}
+
+.less{
+ position: absolute;
+ z-index: 1;
+ margin-left: 7px;
+ margin-top: 7px;
+ border-radius: 4px !important;
+ padding:3px 14px !important;
+}
+
+.plus{
+  position: absolute;
+  margin-left: 38px;
+  margin-top: 7px;
+  padding-right: 10px;
+  z-index: 1;
+  border-radius: 4px !important;
+  padding:3px 14px !important;
+  text-align: center;
+}
+
+
+#left
+{
+  background: linear-gradient(130deg,orange,red);
+  /*background-color:#003153;*/
+  border-radius: 20px;
+}
+
+#right{
+  background:linear-gradient(130deg,#dc2430,#7b4397) ;
+  /*background-color:#3c443c;*/
+  height:84.3em;
+  border-radius: 20px;
+}
+
+#center{
+  background:linear-gradient(130deg,green,yellow) ;
+  /*background: #800000;*/
+  height:84.3em;
+  border-radius: 20px;
+}
+
+
+
+#cart{
+  background:linear-gradient(130deg,#19547b,#ffd89b) ;
+  /*background-color: #89b128;*/
+  height:84.3em;
+  border-radius: 20px; 
+}
+ 
+.iv{
+  width: 70%;
+  background:transparent;
+  /*background-color:#89b128;*/
+  outline: none;
+  border: none;
+  
+  
+} 
+
+li{
+  font-size: 16px
+}
+
+
+
+.shop{
+  padding-top:50px 
+  
+}
+
+.ni{
+  color: black;
+  margin-top: 1em;  
+}
+
+
+.switch {
+  position: relative;
+  
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: red;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: green;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px green;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+#mySwitch{
+  /*text-align: right;*/
+  float:right !important;
+  margin-right: 4px;
+  margin-top: 4px;
+}
+
+#animate {
+  width: 50px;
+  height: 50px;
+  margin-left:10px;
+  position: absolute; /*position required to move*/
+  background-color: red;
+}
+
+.txa{
+  width: 80%;
+  background-color:#FF5733;
+ 
+
+}
+ .txa:focus{
+  border-color:#FF5733; 
+ }
+
+.fadeIn{
+  animation: fadein 0.3s;
+    -moz-animation: fadein 0.3s; /* Firefox */
+    -webkit-animation: fadein 0.3s; /* Safari and Chrome */
+    -o-animation: fadein 0.3s; /* Opera */
+}
+
+.fadeOut{
+  animation: fadeOut 0.3s;
+    -moz-animation: fadeOut 0.3s; /* Firefox */
+    -webkit-animation: fadeOut 0.3s; /* Safari and Chrome */
+    -o-animation: fadeOut 0.3s; /* Opera */
+}
+
+
+
+
+ @keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-moz-keyframes fadeOut { /* Firefox */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-webkit-keyframes fadeOut { /* Safari and Chrome */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-o-keyframes fadeOut { /* Opera */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+
+
+
+.input__box {
+  width:14px;
+  height: 12px;
+}
+
+@-webkit-keyframes wobble {
+  0% {
+    -webkit-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg)
+  }
+  40% {
+    -webkit-transform: scale(1.1, .9) rotate(5deg);
+    transform: scale(1.1, .9) rotate(5deg)
+  }
+  70% {
+    -webkit-transform: scale(.9, 1.1) rotate(-3deg);
+    transform: scale(.9, 1.1) rotate(-3deg)
+  }
+  80% {
+    -webkit-transform: scale(1.05, .95) rotate(1deg);
+    transform: scale(1.05, .95) rotate(1deg)
+  }
+  to {
+    -webkit-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg)
+  }
+}
+
+@keyframes wobble {
+  0% {
+    -webkit-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg)
+  }
+  40% {
+    -webkit-transform: scale(1.1, .9) rotate(5deg);
+    transform: scale(1.1, .9) rotate(5deg)
+  }
+  70% {
+    -webkit-transform: scale(.9, 1.1) rotate(-3deg);
+    transform: scale(.9, 1.1) rotate(-3deg)
+  }
+  80% {
+    -webkit-transform: scale(1.05, .95) rotate(1deg);
+    transform: scale(1.05, .95) rotate(1deg)
+  }
+  to {
+    -webkit-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg)
+  }
+}
+
+.input--checkbox input {
+  display: none
+}
+
+.input__box{
+   border: 1px solid white;
+   background-color:white; 
+}
+
+.input--checkbox .input__box {
+  border-radius: 2.926px;
+  opacity: .9
+} 
+
+
+
+.input--checkbox .input__box:before {
+  -webkit-transition: width .05s linear;
+  transition: width .05s linear;
+  -webkit-transition-delay: .1s;
+  transition-delay: .1s;
+  --rotation: 45deg;
+  --translate-top: 4px;
+  --translate-left: 3px
+}
+
+.input--checkbox .input__box:after {
+  -webkit-transition: width .1s linear;
+  transition: width .1s linear;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  --rotation: -45deg;
+  --translate-top: -2px;
+  --translate-left: 8px
+}
+
+.input--checkbox .input__box:after,
+.input--checkbox .input__box:before {
+  content: "";
+  position: absolute;
+  -webkit-transform-origin: 0 100%;
+  transform-origin: 0 100%;
+  width: 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  -webkit-transform: rotate(var(--rotation)) translateX(var(--translate-top)) translateY(var(--translate-left));
+  transform: rotate(var(--rotation)) translateX(var(--translate-top)) translateY(var(--translate-left));
+  color: #22292f;
+}
+
+.input--checkbox input:checked+.input__box {
+  background-color: #a0bf69;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  animation-name: wobble;
+  /*   animation-name: wobble; */
+  -webkit-animation-name: wobble;
+   animation-duration: .3s;
+  -webkit-animation-duration: .3s;
+/*   animation-duration: .3s; */
+  -webkit-animation-timing-function: ease;
+  animation-timing-function: ease;
+/*   animation-timing-function: ease */
+}
+
+.input--checkbox input:checked+.input__box:before {
+  width: 3.5px;
+  width: calc(11) / 2 - 2px;
+  -webkit-transition-delay: 0s;                                       
+  transition-delay: 0s;
+}
+
+.input--checkbox input:checked+.input__box:after {
+  width: 10.5px;                                                       
+  width: calc(11) / 2 + 2px;
+  -webkit-transition-delay: .05s;
+  transition-delay: .05s
+}
+
+article{
+   /* width: 15px; */
+   display: inline !important;
+}
+
+article span {
+  display: inline-block;
+ 
+}
+
+.label{
+  display: inline !important;
+  padding: 0 !important;
+  text-align: left !important;
+
+}
+
+
+
+
+
+
+
+
+/* Popup container - can be anything you want */
+.popup {
+margin-top:60px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+margin-top :60px;
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+margin-top:20px;
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+ iframe {
+        width: 10px;
+        min-width: 100%;
+        *width: 100%;
+    }
+
+    #mytotal{
+     font-size:1.1vw;
+     margin-top: 6px;
+     margin-left: 1.5vw;
+    }
+
+    .em{
+      height: 7em;
+    }
+
+    .eqh{
+      /*display: flex;*/
+      border-radius: 20px;
+    }
+
+
+
+
+
+.shine{
+background: #a94442 -webkit-gradient(linear, left top, right top, from(silver), to(silver), color-stop(0.5, silver)) 0 0 no-repeat;
+   -webkit-background-size: 150px;
+   background-size: 150px;
+   -webkit-background-clip: text;
+   background-clip: text;
+  color:rgba(255, 255, 255, 0);
+   -webkit-animation-name: shine;
+   animation-name: shine;
+   -webkit-animation-duration: 8s;
+   animation-duration: 8s;
+   -webkit-animation-iteration-count: infinite;
+   animation-iteration-count: infinite;
+   text-shadow: 0 0px 0px rgba(255, 255, 255, 0);
+}
+
+.shine2{
+background: #337ab7 -webkit-gradient(linear, left top, right top, from(silver), to(silver), color-stop(0.5, silver)) 0 0 no-repeat;
+   -webkit-background-size: 150px;
+   background-size: 150px;
+   -webkit-background-clip: text;
+   background-clip: text;
+  color:rgba(255, 255, 255, 0);
+   -webkit-animation-name: shine;
+   animation-name: shine;
+   -webkit-animation-duration: 8s;
+   animation-duration: 8s;
+   -webkit-animation-iteration-count: infinite;
+   animation-iteration-count: infinite;
+   text-shadow: 0 0px 0px rgba(255, 255, 255, 0);
+}
+
+
+
+
+
+
+@keyframes shine {
+  0%, 10% {
+    background-position: -1000px;
+  }
+  20% {
+    /*background-position: top left;*/
+  }
+  90% {
+    /*background-position: top right;*/
+  }
+  100% {
+    background-position: 1700px;
+  }
+}
+
+.notes{
+  opacity: 0.4;
+  height:200px;
+ text-align: center;
+  background-color:black;
+ display: block;
+ margin-left:5em;
+ margin-right: auto;
+ margin-top: -870px;
+  
+  
+}
+

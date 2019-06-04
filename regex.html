@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		body{
+			background:black;
+		}
+	</style>
+	<title>regexp</title>
+</head>
+<body>
+<textarea id="notes">tes\tin"g\</textarea>
+</body>
+
+<!-- look for all matches and output 'em -->
+
+<script>
+
+//Clean output
+var regex=/[\\|"*]/ig;
+var notes=document.getElementById("notes").innerHTML;
+notes=notes.replace(regex,"");
+console.log(notes)
+//End
+
+
+//Custom output
+
+var notesText=document.getElementById('notes');
+notesText.addEventListener('keydown',function(e){
+	console.log(notesText.innerHTML);
+	console.log(notesText.value,"value");
+
+});
+
+
+
+
+
+
+
+
+
+
+
+	
+</script>
+
+
+
+
+
+</html> 
