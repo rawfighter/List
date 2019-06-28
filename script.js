@@ -33,7 +33,7 @@ notes.addEventListener("keyup", function(e) {//update textarea every stroke
 notes.addEventListener("keydown", function(e) {//update localStorage on delete
     saveState();
 });
-//!End notes
+//?End notes
 
 
 //!Start saveState
@@ -107,6 +107,9 @@ function line() {
     return;
 }
 
+//!
+
+
 document.querySelector(".shop").addEventListener("keypress", function(e) { //Listen to enter
     let key = e.which || e.keycode; // Key detect
     if (key === 13) {
@@ -149,6 +152,12 @@ document.querySelector(".shop").addEventListener("keypress", function(e) { //Lis
 });
 
 
+//?
+
+//!
+
+
+
 
 let parentCheck = document.getElementsByClassName("mylist");
 
@@ -176,9 +185,9 @@ for (let g = 0; g < parentCheck.length; g++) {
             if (scart.length === 1 || scart.length === 0) { //if no list item
                 $("#mytotal").fadeOut(); //mytotal fadeOut
             }
-                console.log(costs,"cost removed");
-                console.log(dcost,"dcost removed");
-                console.log(parentCheck[g].childNodes[1].childNodes[1].firstChild.value)
+                //? console.log(costs,"cost removed");
+                //? console.log(dcost,"dcost removed");
+                //? console.log(parentCheck[g].childNodes[1].childNodes[1].firstChild.value, parentCheck[g].childNodes[1].childNodes[1].firstChild.name)
 
             for (let c = 0; c < iv.length; c++) { //Loop thought all items to buy 
                 (function(c) {
@@ -196,7 +205,7 @@ for (let g = 0; g < parentCheck.length; g++) {
             }; //!End for
                 
         } else if (parentCheck[g].childNodes[1].childNodes[1].firstChild.checked === false) {
-            console.log(event)
+            //console.log(event)
             event.preventDefault()
             parentCheck[g].childNodes[1].childNodes[1].firstChild.checked = true;
             if (parentCheck[g].childNodes[1].childNodes[1].firstChild.checked === true) {
@@ -249,8 +258,8 @@ for (let g = 0; g < parentCheck.length; g++) {
                     // saveState();
                     // }
                 }
-                 console.log(costs,"cost added");
-                 console.log(dcost,"dcost added");
+                 console.log("cost/suma added =",costs);
+                 console.log("dcost/total added =",dcost);
                // let mycart = []
 
 
@@ -264,6 +273,11 @@ for (let g = 0; g < parentCheck.length; g++) {
 
     });
 }
+
+
+//!
+
+
 
 
 
@@ -345,6 +359,10 @@ mybt.addEventListener("click", function() { //Listen for Button Click
         })(z);
     }
 });
+
+
+
+
 //!Button End
 
 function less() {
@@ -364,7 +382,7 @@ function less() {
     saveState();
 }
 
-
+//!Plus btn
 function plus() {
 
     var plus = Number(dcost[0]) + 1;
@@ -383,11 +401,7 @@ function plus() {
     saveState();
 }
 
-function hm() {
-
-    // $("#eat").toogleClass();
-}
-
+//!Delete created ele
 function keyfunc(event) {
 
     let mykey = event.which || event.keyCode;
@@ -401,6 +415,9 @@ function keyfunc(event) {
 
     saveState();
 }
+
+//!
+
 
 function myFunction() {
     var popup = document.getElementById("myPopup");
@@ -464,7 +481,7 @@ var w = c.width = window.innerWidth,
             addedSize: 20,
             baseSpeed: 1,
             addedSpeed: 2,
-            colors: [ '#ff3300',"#00cc00","#3366ff","#ff3399" ]
+            colors: [ "#ff3300","#00cc00","#3366ff","#ff3399" ]
             
         },
         

@@ -80,7 +80,7 @@ button:focus{
 #center{
   background:linear-gradient(130deg,green,yellow) ;
   /*background: #800000;*/
-  height:84.3em;
+  height:84.3em;     
   border-radius: 20px;
 }
 
